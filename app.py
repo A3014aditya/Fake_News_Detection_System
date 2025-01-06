@@ -27,7 +27,7 @@ nltk.download('punkt_tab')
 lemmetizer = WordNetLemmatizer() 
 
 ## Load the Model LSTM 
-model = load_model('D:\Fake_News_Detection(new)\models\lstm.h5')
+model = load_model('models\lstm.h5')
 ## Load the Tokenizer Model
 tokenize = joblib.load(R'D:\Fake_News_Detection(new)\models\tokenizer.pkl')
 
