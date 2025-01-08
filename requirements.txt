@@ -1,4 +1,4 @@
-ipykernel
+#ipykernel
 tensorflow
 pandas 
 matplotlib

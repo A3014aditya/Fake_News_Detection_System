@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 import tensorflow as tf
 import joblib
+import os
+import sys 
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.utils import pad_sequences
 from tensorflow.keras.models import Sequential
@@ -11,6 +13,8 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.callbacks import EarlyStopping
 from tensorflow.keras.losses import BinaryCrossentropy
 from tensorflow.keras.models import load_model 
+import warnings
+warnings.filterwarnings('ignore')
 
 import re
 import nltk
@@ -26,10 +30,13 @@ nltk.download('punkt_tab')
 
 lemmetizer = WordNetLemmatizer() 
 
+model_lstm = os.path.join('models','lstm.h5')
+tokenizer = os.path.join('models','tokenizer.pkl')
+
 ## Load the Model LSTM 
-model = load_model('models\lstm.h5')
+model = load_model(model_lstm) 
 ## Load the Tokenizer Model
-tokenize = joblib.load(R'D:\Fake_News_Detection(new)\models\tokenizer.pkl')
+tokenize = joblib.load(tokenizer)
 
 ## Title 
 st.title('Fake News Detection System :100:')
