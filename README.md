@@ -92,7 +92,7 @@ pip install -r requirements.txt
     streamlit run app.py
 
 # User Interface 
-- Link https://aditya-fake-news-detection.streamlit.app/ 
+- Link https://aditya-fake-news-detection.streamlit.app/
 ![Image](https://github.com/user-attachments/assets/38eb59d7-13df-4b24-b88e-5f807bc7d8e0) 
 
 
