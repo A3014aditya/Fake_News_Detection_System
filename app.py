@@ -19,9 +19,9 @@ st.title('Fake News Detection System :100:')
 News = st.text_area('Enter Your News')
 
 nltk.download('stopwords')
-# nltk.download('wordnet')
-# nltk.download('punkt')
-# nltk.download('punkt_tab')
+nltk.download('wordnet')
+nltk.download('punkt')
+nltk.download('punkt_tab')
 
 lemmetizer = WordNetLemmatizer() 
 
